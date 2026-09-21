@@ -3,6 +3,7 @@ package main
 import (
 	_ "github.com/dgrijalva/jwt-go"
 	_ "github.com/google/uuid"
+	_ "github.com/gorilla/websocket"
 	_ "gopkg.in/yaml.v2"
 )
 
