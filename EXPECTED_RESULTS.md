@@ -47,3 +47,7 @@ SCA must NOT list them as packages.
   no `go`/`toolchain` entries.
 - FINDINGS to flag: yaml.v2 shown at 2.2.2 (replace ignored), or `go`/`toolchain`
   present (fix regressed), or any invented version.
+
+## New edge case (regression re-test) — `// indirect` dependency
+`go.mod` adds `github.com/davecgh/go-spew v1.1.1 // indirect`.
+- **PASS:** `go-spew@1.1.1` is healthy and marked **transitive/indirect**.

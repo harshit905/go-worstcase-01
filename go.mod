@@ -9,6 +9,8 @@ require (
 	gopkg.in/yaml.v2 v2.2.2
 )
 
+require github.com/davecgh/go-spew v1.1.1 // indirect
+
 // Worst case: `replace` swaps the vulnerable yaml.v2 2.2.2 for the patched
 // 2.4.0. A correct SCA must report yaml.v2 at 2.4.0 (healthy), not 2.2.2.
 replace gopkg.in/yaml.v2 => gopkg.in/yaml.v2 v2.4.0
